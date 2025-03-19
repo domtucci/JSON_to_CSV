@@ -3,7 +3,7 @@
 This program will create a visual friendly CSV/Excel file from an interpretation file. :smiley:
 
 # Inspiration 
-Anyone who does not read programming languages on a regular bases may find reading JSON/YAML - even for being a human-read-able text language - to be intimidating. The information stored in our data files (decision tree dialogues) is cluttered with lists and dictionaries. Most of the time, not all the information stored is relevant to the cause. This program was built to pull and to organize the necessary information for the people on our team and for any subsidiary users. The format of CSV/Excel files are used and interprated universally. 
+Anyone who does not read programming languages on a regular bases may find reading JSON/YAML - even for being a human-read-able text language - to be intimidating. The information stored in our interpretaion files (decision trees) is cluttered with lists and dictionaries. Most of the time, not all the information stored is relevant to the cause. This program was built to pull and to organize the necessary information for the people on our team and for any subsidiary users. The format of CSV/Excel files are used and interprated universally. 
 
 # Installation 
 git clone the repository. 
@@ -24,19 +24,19 @@ You can run the program using PySimpleGUI if license installed. Please see **[ru
 
 or 
 
-You can run the program through the command line by assigning the file location in variable 'p' on line 39. Reference **[run w/ file location](#run-w-file-location)**
+You can run the program through the command line by assigning the file location in variable 'p' on line 45. Reference **[run w/ file location](#run-w-file-location)**
 
 ## run w/ PySimpleGUI
-Run the program by using: `py Dialogue_Reader.py -v`
+Run the program by using: `py JSON_to_CSV.py -v`
 
-Input a JSON file into the GUI window by clicking 'Browse'. The GUI will allow you to browse your computer files. Select the 'Tree_Dialogue_JSON_File.json' you wish to convert to CSV. Click 'Submit' and the new CSV file will be in your files where you set the directory in the terminal.
+Input a JSON file into the GUI window by clicking 'Browse'. The GUI will allow you to browse your computer files. Select the 'interpretation_JSON_File.json' you wish to convert to CSV. Click 'Submit' and the new CSV file will be in your files where you set the directory in the terminal.
 
 ## run w/ file location
-Run the program by using: `py Dialogue_Reader.py -c p`
+Run the program by using: `py JSON_to_CSV.py -c p`
 
 The variable `p` should be assigned the location where the JSON file exists in the file path/directory. 
 
-`p = Path(r'c:/Users/DV0095/Documents/Python_Projects/dialogues/test.json')`
+`p = Path(r'c:/Users/DV0095/Documents/Python_Projects/JSON_to_CSV/test.json')`
 
 The new CSV file will be in your files where you set the directory in the terminal.
 
